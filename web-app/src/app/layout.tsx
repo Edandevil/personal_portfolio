@@ -11,6 +11,11 @@ import ThemeController from "@/components/layout/ThemeController";
 import StylesheetLoader from "@/components/StylesheetLoader";
 import Script from "next/script";
 
+// Force dynamic rendering to prevent caching issues
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+export const fetchCache = 'force-no-store';
+
 // export const metadata: Metadata = {
 //   title: "Edandevil Portfolio",
 //   description: "Portfolio",

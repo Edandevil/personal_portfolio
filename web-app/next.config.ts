@@ -20,7 +20,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: '/work/:slug*',
+        source: '/:path*',
         headers: [
           {
             key: 'Cache-Control',
