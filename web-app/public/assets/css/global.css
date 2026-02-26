@@ -1,0 +1,36 @@
+﻿@import url('bootstrap.css');
+@import url('font-awesome-pro.css');
+@import url('swiper-bundle.css');
+@import url('swiper-gl.css');
+@import url('magnific-popup.css');
+@import url('spacing.css');
+@import url('slick.css');
+@import url('nice-select.css');
+@import url('atropos.min.css');
+@import url('vizon-unit.css');
+@import url('vizon-core.css');
+@import url('custom-image.css');
+@import url('shop.css');
+@import url('vizon-custom-mediaquery.css');
+
+/* Header Fix for Next.js - Force Overlay */
+.elementor-13561 {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: transparent !important;
+}
+
+/* Ensure the inner header area is also transparent */
+.header-transparent {
+    background: transparent !important;
+}
+
+/* Ensure sticky header works if needed, but transparent at top */
+.header-sticky.header-transparent {
+    position: fixed !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    backdrop-filter: blur(10px);
+}

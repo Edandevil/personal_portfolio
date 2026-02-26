@@ -1,0 +1,46 @@
+{
+    "kind": "singleType",
+    "collectionName": "globals",
+    "info": {
+        "singularName": "global",
+        "pluralName": "globals",
+        "displayName": "Global",
+        "description": "Global sites settings like Identity, SEO, etc."
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "siteTitle": {
+            "type": "string",
+            "default": "Edandevil Portfolio"
+        },
+        "siteDescription": {
+            "type": "text",
+            "default": "Portfolio"
+        },
+        "logo": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "favicon": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    }
+}

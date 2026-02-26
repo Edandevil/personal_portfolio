@@ -1,0 +1,54 @@
+{
+    "kind": "singleType",
+    "collectionName": "footers",
+    "info": {
+        "singularName": "footer",
+        "pluralName": "footers",
+        "displayName": "Footer",
+        "description": "Footer content"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "headline": {
+            "type": "text",
+            "default": "Helping start-ups scale & grow."
+        },
+        "social_links": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.social-link"
+        },
+        "quick_links_title": {
+            "type": "string",
+            "default": "QUICK LINKS"
+        },
+        "quick_links": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.link"
+        },
+        "contact_title": {
+            "type": "string",
+            "default": "CONTACT"
+        },
+        "contact_email": {
+            "type": "email",
+            "default": "agntixs@studio.com"
+        },
+        "contact_phone": {
+            "type": "string",
+            "default": "+(302) 555-0107"
+        },
+        "contact_address": {
+            "type": "text",
+            "default": "4517 Washington Ave. Manchester, \nKentucky 39495"
+        },
+        "copyright_text": {
+            "type": "string",
+            "default": "VIZON.STUDIO"
+        }
+    }
+}

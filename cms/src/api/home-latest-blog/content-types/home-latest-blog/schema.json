@@ -1,0 +1,24 @@
+{
+    "kind": "singleType",
+    "collectionName": "home_latest_blogs",
+    "info": {
+        "singularName": "home-latest-blog",
+        "pluralName": "home-latest-blogs",
+        "displayName": "Home Latest Blog",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "blogs": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::article.article"
+        }
+    }
+}

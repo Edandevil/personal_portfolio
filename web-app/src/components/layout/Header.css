@@ -1,0 +1,183 @@
+/* Header.css - Re-Do Studio Inspired Morphing Transition */
+
+.header-dock-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9998;
+    transition:
+        padding 1s cubic-bezier(0.16, 1, 0.3, 1),
+        top 1s cubic-bezier(0.16, 1, 0.3, 1);
+    pointer-events: none;
+    will-change: padding, top;
+}
+
+.header-dock {
+    background: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    border: 1px solid transparent;
+    padding: 10px 0;
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    /* Better for transition interpolation */
+    transition:
+        background 1s cubic-bezier(0.16, 1, 0.3, 1),
+        backdrop-filter 1s cubic-bezier(0.16, 1, 0.3, 1),
+        padding 1s cubic-bezier(0.16, 1, 0.3, 1),
+        max-width 1s cubic-bezier(0.16, 1, 0.3, 1),
+        border-radius 1s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 1s cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: none;
+    pointer-events: auto;
+    will-change: max-width, transform, background;
+}
+
+/* Morph to Pill Dock on Scroll */
+.header-dock-container.scrolled {
+    top: 20px;
+    padding: 0 20px;
+}
+
+.header-dock-container.scrolled .header-dock {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 8px 12px 8px 20px;
+    /* Offset for optical balance */
+    border-radius: 50px;
+    max-width: 520px;
+    /* Precise dock width */
+    box-shadow:
+        0 10px 40px -10px rgba(0, 0, 0, 0.08),
+        0 4px 12px -2px rgba(0, 0, 0, 0.04);
+    transform: scale(1.02);
+}
+
+/* Logo */
+.dock-logo {
+    height: 44px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    transition: transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scrolled .dock-logo {
+    transform: scale(0.9);
+    /* Use scale instead of height change */
+}
+
+.dock-logo img {
+    height: 32px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Navigation */
+.dock-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    transition: gap 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.scrolled .dock-nav {
+    gap: 2px;
+}
+
+.dock-link {
+    color: #1a1a1a;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition:
+        color 0.3s ease,
+        background 0.3s ease,
+        transform 1s cubic-bezier(0.16, 1, 0.3, 1),
+        padding 1s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    text-decoration: none;
+}
+
+.scrolled .dock-link {
+    transform: scale(0.92);
+    /* Use scale instead of font-size */
+    padding: 8px 16px;
+}
+
+.dock-link:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: #000;
+}
+
+/* CTA */
+.dock-link-cta {
+    background: #1a1a1a;
+    /* Black like reference */
+    color: #fff !important;
+}
+
+.dock-link-cta:hover {
+    background: #000;
+    transform: translateY(-0.5px);
+}
+
+/* Mobile Toggle */
+.dock-mobile-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+}
+
+.scrolled .dock-mobile-toggle {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 991px) {
+    .header-dock-container {
+        padding: 20px;
+    }
+
+    .dock-nav {
+        display: none;
+    }
+
+    .dock-mobile-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header-dock {
+        justify-content: space-between;
+    }
+
+    .dock-logo {
+        border-right: none !important;
+    }
+
+    .header-dock-container.scrolled .header-dock {
+        max-width: 100%;
+        border-radius: 20px;
+    }
+}

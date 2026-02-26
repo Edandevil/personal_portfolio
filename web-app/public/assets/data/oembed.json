@@ -1,0 +1,12 @@
+﻿{
+    "version": "1.0",
+    "provider_name": "VIZON",
+    "provider_url": "index.html",
+    "author_name": "Vizon",
+    "author_url": "#",
+    "title": "About Me",
+    "type": "rich",
+    "width": 600,
+    "height": 338,
+    "html": "<blockquote class=\"wp-embedded-content\" data-secret=\"mcbovrH9IF\"><a href=\"about_me.html\">About Me<\/a><\/blockquote><iframe sandbox=\"allow-scripts\" security=\"restricted\" src=\"about_me.html\" width=\"600\" height=\"338\" title=\"&#x201C;About Me&#x201D; &#x2014; VIZON\" data-secret=\"mcbovrH9IF\" frameborder=\"0\" marginwidth=\"0\" marginheight=\"0\" scrolling=\"no\" class=\"wp-embedded-content\"><\/iframe>"
+}

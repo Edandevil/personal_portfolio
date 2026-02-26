@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/bebasneue-v16-JTUSjIg69CK48gW7PXooxW4.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Besley';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/besley-v22-PlIhFlO1MaNwaNGWUC92IOH_mtG4fbbBSdQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Besley';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/besley-v22-PlIhFlO1MaNwaNGWUC92IOH_mtG4fYTBSdQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Besley';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/besley-v22-PlIhFlO1MaNwaNGWUC92IOH_mtG4fWjGSdQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Besley';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/besley-v22-PlIhFlO1MaNwaNGWUC92IOH_mtG4fVHGSdQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Besley';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/besley-v22-PlIhFlO1MaNwaNGWUC92IOH_mtG4fTbGSdQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/inter-v20-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/inter-v20-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/inter-v20-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/inter-v20-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/inter-v20-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/inter-v20-UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYMZg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/onest-v9-gNMZW3F-SZuj7zOT0IfSjTS16cPhqx-Zsg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/onest-v9-gNMZW3F-SZuj7zOT0IfSjTS16cPh9R-Zsg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/onest-v9-gNMZW3F-SZuj7zOT0IfSjTS16cPhxx-Zsg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/onest-v9-gNMZW3F-SZuj7zOT0IfSjTS16cPhKxiZsg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/onest-v9-gNMZW3F-SZuj7zOT0IfSjTS16cPhEhiZsg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Onest';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/onest-v9-gNMZW3F-SZuj7zOT0IfSjTS16cPhdRiZsg.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Phudu';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/phudu-v6-0FlJVPSHk0ya-7OUeO_U-Lwm7PkK62zUSw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Phudu';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/phudu-v6-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKtWzUSw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Phudu';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/phudu-v6-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKh2zUSw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Phudu';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/phudu-v6-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKa2vUSw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Phudu';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/phudu-v6-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKUmvUSw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Phudu';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/phudu-v6-0FlJVPSHk0ya-7OUeO_U-Lwm7PkKNWvUSw.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/playfairdisplay-v40-nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvUDQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/playfairdisplay-v40-nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKd3vUDQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/playfairdisplay-v40-nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKebukDQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/playfairdisplay-v40-nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKeiukDQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/playfairdisplay-v40-nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKfFukDQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/poppins-v24-pxiByp8kv8JHgFVrLDz8V1s.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/poppins-v24-pxiEyp8kv8JHgFVrFJA.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/poppins-v24-pxiByp8kv8JHgFVrLGT9V1s.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/poppins-v24-pxiByp8kv8JHgFVrLEj6V1s.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/poppins-v24-pxiByp8kv8JHgFVrLCz7V1s.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/poppins-v24-pxiByp8kv8JHgFVrLDD4V1s.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/satisfy-v22-rP2Hp2yn6lkG50LoOZQ.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/spacegrotesk-v22-V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj62UUsj.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/spacegrotesk-v22-V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUsj.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/spacegrotesk-v22-V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7aUUsj.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/spacegrotesk-v22-V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj42Vksj.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/spacegrotesk-v22-V8mQoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj4PVksj.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/teko-v23-LYjYdG7kmE0gV69VVPPdFl06VN9JG7Sy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/teko-v23-LYjYdG7kmE0gV69VVPPdFl06VN8XG7Sy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/teko-v23-LYjYdG7kmE0gV69VVPPdFl06VN8lG7Sy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/teko-v23-LYjYdG7kmE0gV69VVPPdFl06VN_JHLSy.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Teko';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/teko-v23-LYjYdG7kmE0gV69VVPPdFl06VN_wHLSy.ttf) format('truetype');
+}

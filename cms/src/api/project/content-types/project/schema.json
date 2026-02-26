@@ -1,0 +1,105 @@
+{
+    "kind": "collectionType",
+    "collectionName": "projects",
+    "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "Project",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title"
+        },
+        "thumbnail": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "detailImage": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "categories": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::category.category",
+            "inversedBy": "projects"
+        },
+        "client": {
+            "type": "string"
+        },
+        "role": {
+            "type": "string"
+        },
+        "year": {
+            "type": "string"
+        },
+        "duration": {
+            "type": "string"
+        },
+        "designer": {
+            "type": "string"
+        },
+        "description": {
+            "type": "richtext"
+        },
+        "description2": {
+            "type": "richtext"
+        },
+        "process": {
+            "type": "component",
+            "repeatable": false,
+            "component": "project.process"
+        },
+        "services": {
+            "type": "json"
+        },
+        "gallery": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "storeImages": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "challenge": {
+            "type": "richtext"
+        }
+    }
+}

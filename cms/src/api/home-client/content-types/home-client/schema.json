@@ -1,0 +1,27 @@
+{
+    "kind": "singleType",
+    "collectionName": "home_clients",
+    "info": {
+        "singularName": "home-client",
+        "pluralName": "home-clients",
+        "displayName": "Home Client",
+        "description": "Clients and partners logos"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "logos": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images"
+            ]
+        }
+    }
+}

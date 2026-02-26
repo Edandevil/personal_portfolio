@@ -1,0 +1,21 @@
+{
+    "kind": "singleType",
+    "collectionName": "home_marquees",
+    "info": {
+        "singularName": "home-marquee",
+        "pluralName": "home-marquees",
+        "displayName": "Home Marquee",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "items": {
+            "type": "component",
+            "repeatable": true,
+            "component": "shared.marquee-item"
+        }
+    }
+}

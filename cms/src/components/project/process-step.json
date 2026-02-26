@@ -1,0 +1,21 @@
+{
+    "collectionName": "components_project_process_steps",
+    "info": {
+        "displayName": "Process Step",
+        "icon": "layer-group",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "number": {
+            "type": "string",
+            "default": "01"
+        },
+        "title": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        }
+    }
+}

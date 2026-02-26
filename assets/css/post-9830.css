@@ -1,0 +1,106 @@
+.elementor-9830 .elementor-element.elementor-element-a88f208 {
+    --display: flex;
+    --flex-direction: row;
+    --container-widget-width: initial;
+    --container-widget-height: 100%;
+    --container-widget-flex-grow: 1;
+    --container-widget-align-self: stretch;
+    --flex-wrap-mobile: wrap;
+    --justify-content: space-between;
+    border-style: solid;
+    --border-style: solid;
+    border-width: 1px 0px 0px 0px;
+    --border-top-width: 1px;
+    --border-right-width: 0px;
+    --border-bottom-width: 0px;
+    --border-left-width: 0px;
+    border-color: #FFFFFF1A;
+    --border-color: #FFFFFF1A;
+    --margin-top: 0px;
+    --margin-bottom: 0px;
+    --margin-left: 0px;
+    --margin-right: 0px;
+    --padding-top: 30px;
+    --padding-bottom: 23px;
+    --padding-left: 15px;
+    --padding-right: 15px;
+}
+
+.elementor-9830 .elementor-element.elementor-element-a88f208:not(.elementor-motion-effects-element-type-background),
+.elementor-9830 .elementor-element.elementor-element-a88f208>.elementor-motion-effects-container>.elementor-motion-effects-layer {
+    background-color: #0A0A0A;
+}
+
+.elementor-9830 .elementor-element.elementor-element-807de54 {
+    margin: 0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: -0.15px;
+    color: #FFFFFF99;
+}
+
+.elementor-9830 .elementor-element.elementor-element-807de54.elementor-element {
+    --align-self: center;
+}
+
+.elementor-9830 .elementor-element.elementor-element-410946d .tp-el-text br {
+    display: unset;
+}
+
+.elementor-9830 .elementor-element.elementor-element-82724f3.elementor-element {
+    --align-self: center;
+}
+
+@media(max-width:1200px) {
+    .elementor-9830 .elementor-element.elementor-element-a88f208 {
+        --gap: 12px 0px;
+        --row-gap: 12px;
+        --column-gap: 0px;
+        --flex-wrap: wrap;
+        --padding-top: 30px;
+        --padding-bottom: 30px;
+        --padding-left: 15px;
+        --padding-right: 15px;
+    }
+    .elementor-9830 .elementor-element.elementor-element-807de54 {
+        width: var( --container-widget-width, 100%);
+        max-width: 100%;
+        --container-widget-width: 100%;
+        --container-widget-flex-grow: 0;
+    }
+}
+
+@media(max-width:992px) {
+    .elementor-9830 .elementor-element.elementor-element-a88f208 {
+        --justify-content: space-between;
+        --align-items: center;
+        --container-widget-width: calc( ( 1 - var( --container-widget-flex-grow)) * 100%);
+    }
+    .elementor-9830 .elementor-element.elementor-element-807de54 {
+        text-align: center;
+    }
+    .elementor-9830 .elementor-element.elementor-element-410946d {
+        width: initial;
+        max-width: initial;
+    }
+}
+
+@media(max-width:768px) {
+    .elementor-9830 .elementor-element.elementor-element-a88f208 {
+        --flex-direction: column;
+        --container-widget-width: 100%;
+        --container-widget-height: initial;
+        --container-widget-flex-grow: 0;
+        --container-widget-align-self: initial;
+        --flex-wrap-mobile: wrap;
+    }
+    .elementor-9830 .elementor-element.elementor-element-410946d>.elementor-widget-container {
+        margin: 0px 0px -10px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+    .elementor-9830 .elementor-element.elementor-element-410946d.elementor-element {
+        --align-self: center;
+    }
+}.elementor-9830 .elementor-element.elementor-element-a88f208{--display:flex;--flex-direction:row;--container-widget-width:initial;--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--justify-content:space-between;border-style:solid;--border-style:solid;border-width:1px 0px 0px 0px;--border-top-width:1px;--border-right-width:0px;--border-bottom-width:0px;--border-left-width:0px;border-color:#FFFFFF1A;--border-color:#FFFFFF1A;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:30px;--padding-bottom:23px;--padding-left:15px;--padding-right:15px;}.elementor-9830 .elementor-element.elementor-element-a88f208:not(.elementor-motion-effects-element-type-background), .elementor-9830 .elementor-element.elementor-element-a88f208 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:#0A0A0A;}.elementor-9830 .elementor-element.elementor-element-807de54{margin:0px 0px calc(var(--kit-widget-spacing, 0px) + 0px) 0px;font-size:15px;font-weight:600;text-transform:uppercase;line-height:1;letter-spacing:-0.15px;color:#FFFFFF99;}.elementor-9830 .elementor-element.elementor-element-807de54.elementor-element{--align-self:center;}.elementor-9830 .elementor-element.elementor-element-410946d .tp-el-text br{display:unset;}.elementor-9830 .elementor-element.elementor-element-82724f3.elementor-element{--align-self:center;}@media(max-width:1200px){.elementor-9830 .elementor-element.elementor-element-a88f208{--gap:12px 0px;--row-gap:12px;--column-gap:0px;--flex-wrap:wrap;--padding-top:30px;--padding-bottom:30px;--padding-left:15px;--padding-right:15px;}.elementor-9830 .elementor-element.elementor-element-807de54{width:var( --container-widget-width, 100% );max-width:100%;--container-widget-width:100%;--container-widget-flex-grow:0;}}@media(max-width:992px){.elementor-9830 .elementor-element.elementor-element-a88f208{--justify-content:space-between;--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );}.elementor-9830 .elementor-element.elementor-element-807de54{text-align:center;}.elementor-9830 .elementor-element.elementor-element-410946d{width:initial;max-width:initial;}}@media(max-width:768px){.elementor-9830 .elementor-element.elementor-element-a88f208{--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;}.elementor-9830 .elementor-element.elementor-element-410946d > .elementor-widget-container{margin:0px 0px -10px 0px;padding:0px 0px 0px 0px;}.elementor-9830 .elementor-element.elementor-element-410946d.elementor-element{--align-self:center;}}
