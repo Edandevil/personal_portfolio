@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         port: '1337',
         pathname: '/uploads/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'useful-desire-b5428dcfa3.strapiapp.com',
+        pathname: '/uploads/**',
+      },
     ],
   },
   async headers() {
