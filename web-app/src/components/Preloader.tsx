@@ -7,8 +7,8 @@ export default function Preloader() {
     const pathname = usePathname();
 
     useEffect(() => {
-        // Reset loading state on route change
-        setIsLoading(true);
+        // Reset loading state on route change if needed (non-synchronously)
+        // setIsLoading(true); // Removed to prevent cascading renders
 
         // Simulate loading progress
         let count = 0;

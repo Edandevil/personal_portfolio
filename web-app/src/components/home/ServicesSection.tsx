@@ -3,18 +3,27 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { getStrapiMedia } from '@/utils/strapi';
 
+interface StrapiImage {
+    url: string;
+    data?: {
+        attributes?: {
+            url: string;
+        };
+    };
+}
+
 interface ServiceItem {
     id: number;
     title: string;
     description: string;
     categories: string;
-    icon: any;
+    icon: StrapiImage;
 }
 
 interface ServicesSectionProps {
     data?: {
         title: string;
-        video: any;
+        video: StrapiImage;
         services: ServiceItem[];
     } | null;
 }
@@ -329,7 +338,7 @@ export default function ServicesSection({ data }: ServicesSectionProps) {
                     {/* Right Side Cards */}
                     <div className="accordion-container">
                         {services.map((service, index) => {
-                            const iconUrl = getStrapiMedia(service.icon?.url || service.icon?.data?.attributes?.url);
+                            const iconUrl = getStrapiMedia((service.icon?.url || service.icon?.data?.attributes?.url || null) as string | null);
                             const idStr = (index + 1).toString().padStart(2, '0');
 
                             return (

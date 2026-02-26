@@ -19,8 +19,8 @@ async function getProjects() {
         if (!data) return { error: 'Fetch returned null (check console)' };
         if (!data.data) return { error: 'No data property in response', raw: data };
         return data.data;
-    } catch (e: any) {
-        return { error: e.message };
+    } catch (e: unknown) {
+        return { error: (e as Error).message };
     }
 }
 
