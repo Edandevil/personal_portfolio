@@ -5,8 +5,14 @@ export default function WorkTextSlider() {
     useEffect(() => {
         // Initialize Swiper for text slider
         const timer = setTimeout(() => {
-            if (typeof window !== 'undefined' && (window as any).Swiper) {
-                const Swiper = (window as any).Swiper;
+            interface VizonWindow extends Window {
+                Swiper?: new (selector: string, options: object) => unknown;
+            }
+
+            const vWindow = window as unknown as VizonWindow;
+
+            if (typeof window !== 'undefined' && vWindow.Swiper) {
+                const Swiper = vWindow.Swiper;
                 const slider = document.querySelector('.vz-text-6-active');
 
                 if (slider && !slider.classList.contains('swiper-initialized')) {

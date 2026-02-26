@@ -1,5 +1,18 @@
-// Helper function to render Strapi's rich text blocks format
-export function renderRichText(data: any): string {
+interface RichTextNode {
+    text?: string;
+    bold?: boolean;
+    italic?: boolean;
+    children?: RichTextNode[];
+}
+
+interface RichTextBlock {
+    type: string;
+    level?: number;
+    format?: 'ordered' | 'unordered';
+    children?: RichTextNode[];
+}
+
+export function renderRichText(data: string | RichTextBlock[] | null | undefined): string {
     // Handle null/undefined
     if (!data) {
         return '';
@@ -13,9 +26,9 @@ export function renderRichText(data: any): string {
 
     // Handle rich text blocks array
     if (Array.isArray(data)) {
-        return data.map((block: any) => {
+        return data.map((block: RichTextBlock) => {
             if (block.type === 'paragraph') {
-                const text = block.children?.map((child: any) => {
+                const text = block.children?.map((child: RichTextNode) => {
                     let str = child.text || '';
                     // Handle formatting
                     if (child.bold) str = `<strong>${str}</strong>`;
@@ -25,13 +38,13 @@ export function renderRichText(data: any): string {
                 return `<p>${text}</p>`;
             }
             if (block.type === 'heading') {
-                const text = block.children?.map((child: any) => child.text || '').join('') || '';
+                const text = block.children?.map((child: RichTextNode) => child.text || '').join('') || '';
                 const level = block.level || 2;
                 return `<h${level}>${text}</h${level}>`;
             }
             if (block.type === 'list') {
-                const items = block.children?.map((item: any) => {
-                    const itemText = item.children?.map((child: any) => child.text || '').join('') || '';
+                const items = block.children?.map((item: RichTextNode) => {
+                    const itemText = item.children?.map((child: RichTextNode) => child.text || '').join('') || '';
                     return `<li>${itemText}</li>`;
                 }).join('') || '';
                 const tag = block.format === 'ordered' ? 'ol' : 'ul';
